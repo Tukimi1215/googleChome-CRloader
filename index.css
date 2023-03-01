@@ -1,0 +1,87 @@
+th,
+#ratingBest {
+  border: solid 1px;
+}
+
+td,
+#ratingBest {
+  border: solid 1px;
+  padding: 10px;
+}
+
+#UserIdInput {
+  display: flex;
+}
+
+#reset {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+#send {
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+table,
+#ratingBest {
+  border-collapse: collapse;
+}
+
+.musicName {
+  text-align: center;
+}
+
+.topSss {
+  background-color: #ffffcc;
+  color: #ff6600;
+}
+
+.Sss {
+  background-color: #ffff80;
+}
+
+.topSs {
+  background-color: #ffa500;
+}
+
+.Ss {
+  background-color: #ff6600;
+}
+
+.userGameData {
+  display: flex;
+}
+
+.uppercaseLetter {
+  letter-spacing: 10%;
+}
+
+#userLevelText {
+  margin-left: 10px;
+}
+
+#userNameText {
+  padding-left: 10px;
+  margin-right: 10px;
+}
+
+#rating {
+  margin-left: 10px
+}
+
+#maxRating {
+  margin-right: 10px;
+}
+
+#userStatus {
+  display: flex;
+  flex-direction: column;
+}
+
+#userProfileArea {
+  background-size: contain;
+  width: 704px;
+  height: 75px;
+  background-color: aqua;
+}
