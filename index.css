@@ -80,8 +80,17 @@ table,
 }
 
 #userProfileArea {
-  background-size: contain;
-  width: 704px;
-  height: 75px;
-  background-color: aqua;
+  border: solid 1px black;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  display: inline-block;
+  padding: 1%;
+}
+
+#userNameText {
+  border-bottom: solid 1px black;
+}
+
+#userLevelText {
+  border-bottom: solid 1px black;
 }

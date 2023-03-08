@@ -62,42 +62,6 @@ function createUserProfileArea(playerDataObj) {
 
   let userProfileArea = document.getElementById("userProfileArea")
 
-  let initializationCreateDiv = document.createElement("div")
-  userProfileArea.appendChild(initializationCreateDiv);
-
-  let createDivUserTitle = document.createElement("div")
-  createDivUserTitle.setAttribute("id", "mainTitle")
-  userProfileArea.appendChild(createDivUserTitle)
-
-  initializationCreateDiv = document.createElement("div")
-  initializationCreateDiv.setAttribute("id", "userStatus")
-  userProfileArea.appendChild(initializationCreateDiv);
-
-  let createDivUserGameData = document.createElement("div")
-  createDivUserGameData.setAttribute("class", "userGameData")
-  initializationCreateDiv.appendChild(createDivUserGameData);
-
-  let createDivUserGameDataChilelement = document.createElement("div")
-  createDivUserGameDataChilelement.setAttribute("id", "userLevelText")
-  createDivUserGameData.appendChild(createDivUserGameDataChilelement)
-
-  createDivUserGameDataChilelement = document.createElement("div")
-  createDivUserGameDataChilelement.setAttribute("id", "userNameText")
-  createDivUserGameData.appendChild(createDivUserGameDataChilelement)
-
-  createDivUserGameData = document.createElement("div")
-  createDivUserGameData.setAttribute("class", "userGameData")
-  initializationCreateDiv.appendChild(createDivUserGameData);
-
-  createDivUserGameDataChilelement = document.createElement("div")
-  createDivUserGameDataChilelement.setAttribute("id", "rating")
-  createDivUserGameData.appendChild(createDivUserGameDataChilelement)
-
-  createDivUserGameDataChilelement = document.createElement("div")
-  createDivUserGameDataChilelement.setAttribute("id", "maxRating")
-  createDivUserGameData.appendChild(createDivUserGameDataChilelement)
-
-
   //HTMlからclass、idを取得 変数作成
   let userLevelText = document.getElementById("userLevelText");
   let userNameText = document.getElementById("userNameText");
@@ -138,23 +102,28 @@ function createUserProfileArea(playerDataObj) {
   */
 
 
+  title.innerText = "";
   createSpan = document.createElement("span");
   createSpan.textContent = playerDataObj.title
   title.appendChild(createSpan);
 
+  userLevelText.innerText = "";
   createSpan = document.createElement("span");
   createSpan.textContent = freeTitle.levelText + playerDataObj.level;
   userLevelText.appendChild(createSpan);
 
+  userNameText.innerText = "";
   createSpan = document.createElement("span");
   createSpan.textContent = playerDataObj.player_name;
   createSpan.setAttribute("class", "uppercaseLetter")
   userNameText.appendChild(createSpan);
 
+  rating.innerText = "";
   createSpan = document.createElement("span");
   createSpan.textContent = playerDataObj.rating + freeTitle.ratinSlash
   rating.appendChild(createSpan);
 
+  maxRating.innerText = "";
   createSpan = document.createElement("span");
   createSpan.textContent = playerDataObj.rating_max
   maxRating.appendChild(createSpan);
